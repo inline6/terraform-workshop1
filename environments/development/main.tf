@@ -3,6 +3,7 @@ provider "aws" {
   region = "eu-central-1"
 }
 
+# Configure backend for S3
 terraform {
   backend "s3" {
     bucket         = "terraform-state-bucket1990"
