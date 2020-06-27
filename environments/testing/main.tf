@@ -13,3 +13,7 @@ terraform {
     dynamodb_table = "terraform-lock"
   }
 }
+
+module "ec2" {
+  source = "../../modules/aws_ec2"
+}
